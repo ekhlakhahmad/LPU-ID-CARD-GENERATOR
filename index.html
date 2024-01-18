@@ -11,113 +11,109 @@
 <body>
 
     <!-- ********  HEADING PART CREATED   ******** -->
-    <div class="main-container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="#"><img src="./Images/logo-transparent.png" alt="logo"></a>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="../Ekhlakh-CV/index.html">Resume</a></li>
-                <li><a href="./Gallery/index.html">Gallery</a></li>
-                <li><a href="./Contact_Us/index.html">Contact</a></li>
-                <li><a href="./About/index.html">About</a></li>
-            </ul>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img src="./Images/logo-transparent.png" alt="logo"></a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <!-- ********  BODY-PART CREATED   ********** -->
+
+    <div class="body-part">
+        <div class="inputContainer">
+            <form>
+                <h1>Fill the Form for ID-Card</h1>
+
+                <div class="input-nameReg">
+                    <div class="batch-sec">
+                        <label for="batch">Batch:</label><br>
+                        <input id="batch1" type="text" placeholder="2022" required><br>
+                    </div>
+
+                    <div class="reg-sec">
+                        <label for="reg">Reg. No: </label><br>
+                        <input id="reg1" type="text" placeholder="12209166" required>
+                    </div><br>
+                </div>
+
+                <label for="name">Name:</label><br>
+                <input id="name1" type="text" placeholder="Student_Name" required><br>
+
+                <label for="parent">Parents Name:</label><br>
+                <input id="parentName1" type="text" placeholder="Parent_Name" required><br>
+
+                <label for="address">Full Address:</label><br>
+                <input id="address1" type="text" placeholder="Address" required><br>
+
+                <label for="mobile">Mobile_No. :</label><br>
+                <input id="mobile1" type="text" placeholder="957665xxxx" required><br>
+
+                <label for="valid">Validity:</label><br>
+                <input id="valid1" type="text" placeholder="01/07/2024" required><br>
+
+                <input id="photo1" type="file" required><br>
+                <button id="genbtn">Generate ID Card</button>
+            </form>
+            </table>
         </div>
 
-        <!-- ********  BODY-PART CREATED   ********** -->
+        <!-- ********  GENERATED ID CARD   ********** -->
 
-        <div class="body-part">
-            <div class="input-container">
-                <form>
-                    <h1>Fill the Form for ID-Card</h1>
-
-                    <div class="input-nameReg">
-                        <div class="batch-sec">
-                            <label for="batch">Batch:</label><br>
-                            <input id="batch1" type="text" placeholder="2022" required><br>
-                        </div>
-
-                        <div class="reg-sec">
-                            <label for="reg">Reg. No: </label><br>
-                            <input id="reg1" type="text" placeholder="12209166" required>
-                        </div><br>
+        <div class="container">
+            <div class="output">
+                <div class="bg-image"></div>
+                <div id="heading-part">
+                    <div class="student-name">
+                        <p id="batch2"></p>
+                        <p id="reg2"></p>
+                        <p id="name2"></p>
                     </div>
-
-                    <label for="name">Name:</label><br>
-                    <input id="name1" type="text" placeholder="Student_Name" required><br>
-
-                    <label for="parent">Parents Name:</label><br>
-                    <input id="parentName1" type="text" placeholder="Parent_Name" required><br>
-
-                    <label for="address">Full Address:</label><br>
-                    <input id="address1" type="text" placeholder="Address" required><br>
-
-                    <label for="mobile">Mobile_No. :</label><br>
-                    <input id="mobile1" type="text" placeholder="957665xxxx" required><br>
-
-                    <label for="valid">Validity:</label><br>
-                    <input id="valid1" type="text" placeholder="01/07/2024" required><br>
-
-                    <input id="photo1" type="file" required><br>
-                    <button id="genbtn">Generate ID Card</button>
-                </form>
-                </table>
-            </div>
-
-            <!-- ********  GENERATED ID CARD   ********** -->
-
-            <div class="container">
-                <div class="output">
-                    <div class="bg-image"></div>
-                    <div id="heading-part">
-                        <div class="student-name">
-                            <p id="batch2"></p>
-                            <p id="reg2"></p>
-                            <p id="name2"></p>
-                        </div>
-                        <div class="logo">
-                            <img src="./Images/LPU LOGO.png" alt="logo">
-                        </div>
+                    <div class="logo">
+                        <img src="./Images/LPU LOGO.png" alt="logo">
                     </div>
+                </div>
 
-                    <div id="body-part">
-                        <div class="photo">
-                            <img id="photo2" src="" alt="">
-                        </div>
-                        <div class="address">
-                            <p id="parentName2"></p>
-                            <p id="address2"></p>
-                            <p id="address2"></p>
-                            <p id="mobile2"></p>
-                        </div>
-                        <div class="bar-code">
-                            <img src="./Images/bar-code.png" alt="bar-code">
-                        </div>
+                <div id="body-part">
+                    <div class="photo">
+                        <img id="photo2" src="" alt="">
                     </div>
+                    <div class="address">
+                        <p id="parentName2"></p>
+                        <p id="address2"></p>
+                        <p id="address2"></p>
+                        <p id="mobile2"></p>
+                    </div>
+                    <div class="bar-code">
+                        <img src="./Images/bar-code.png" alt="bar-code">
+                    </div>
+                </div>
 
-                    <div id="footer-part">
-                        <h4 id="valid2"></h4>
-                        <p>(if not withdrawn earlier)</p>
-                    </div>
+                <div id="footer-part">
+                    <h4 id="valid2"></h4>
+                    <p>(if not withdrawn earlier)</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- ********  FOOTER-POSITION   ********** -->
+    <!-- ********  FOOTER-POSITION   ********** -->
 
-        <div class="footer-position">
-            <div class="social-icons">
-                <a href="https://wa.me/9576650491" target="_blank"><img src="./Images/whatsapp.png" alt="whatsApp"></a>
-                <a href="https://www.instagram.com/ekhlakhahmad9/" target="_blank"><img src="./Images/instagram.png"
-                        alt="instagram"></a>
-                <a href="https://www.linkedin.com/in/ekhlakhahmad/" target="_blank"><img src="./Images/linkedin.png"
-                        alt="linkedIn"></a>
-                <a href="https://www.github.com/ekhlakhahmad" target="_blank"><img src="./Images/github.png"
-                        alt="github"></a>
-            </div>
-            <h4>| Developed by ❤️ Ekhlakh <span>Ahmad ❤️ </span></h4>
+    <div class="footer-position">
+        <div class="social-icons">
+            <a href="https://wa.me/9576650491" target="_blank"><img src="./Images/whatsapp.png" alt="whatsApp"></a>
+            <a href="https://www.instagram.com/ekhlakhahmad9/" target="_blank"><img src="./Images/instagram.png"
+                    alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/ekhlakhahmad/" target="_blank"><img src="./Images/linkedin.png"
+                    alt="linkedIn"></a>
+            <a href="https://www.github.com/ekhlakhahmad" target="_blank"><img src="./Images/github.png"
+                    alt="github"></a>
         </div>
+        <h4>| Developed by ❤️ Ekhlakh <span>Ahmad ❤️ </span></h4>
     </div>
 
     <script src="script.js"></script>

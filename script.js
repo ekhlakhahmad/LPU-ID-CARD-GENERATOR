@@ -8,6 +8,7 @@ const valid1 = document.getElementById("valid1");
 const genbtn = document.getElementById("genbtn");
 const showBtn = document.querySelector(".output");
 const container = document.querySelector('.container');
+const inputContainer = document.querySelector('.inputContainer');
 
 const batch2 = document.getElementById("batch2");
 const reg2 = document.getElementById("reg2");
@@ -47,4 +48,6 @@ genbtn.addEventListener("click", () => {
   }
 
   container.style.display = "block";
+  inputContainer.style.display = "none";
+
 });
