@@ -25,7 +25,7 @@ genbtn.addEventListener("click", () => {
   name2.textContent = name1.value;
   parentName2.textContent = "C/o: " + parentName1.value;
   address2.textContent = address1.value;
-  mobile2.textContent = "Resi. No.: " + mobile1.value;
+  mobile2.textContent = "Resi. No. : " + mobile1.value;
   valid2.textContent = "Valid upto: " + valid1.value;
 
   const input = document.getElementById("photo1");
